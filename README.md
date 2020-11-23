@@ -4,14 +4,14 @@
 
 | Column             | Type   | Options                         |
 | ------------------ | ------ | ------------------------------- |
-| nickname           | string | null: false                     | ok
-| email              | string | null: false, uniqueness: true   | ok
-| encrypted_password | string | null: false                     | ok
-| last_name          | string | null: false                     | ok
-| first_name         | string | null: false                     | ok
-| last_name_kana     | string | null: false                     | ok
-| first_name_kana    | string | null: false                     | ok
-| birthday           | date   | null: false                     | 
+| nickname           | string | null: false                     |
+| email              | string | null: false, uniqueness: true   |
+| encrypted_password | string | null: false                     |
+| last_name          | string | null: false                     |
+| first_name         | string | null: false                     |
+| last_name_kana     | string | null: false                     |
+| first_name_kana    | string | null: false                     |
+| birthday           | date   | null: false                     |
 
 ### Association
 
