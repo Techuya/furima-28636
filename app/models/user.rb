@@ -7,5 +7,5 @@ class User < ApplicationRecord
   has_many :items
   has_many :purchases
 
-  validates :nickname, :email, :encrypted_password, :last_name, :first_name, :last_name_kana, :first_name_kana, :birthday, presence: true
+  validates :nickname, :email, :password_confirmation, :last_name, :first_name, :last_name_kana, :first_name_kana, :birthday, presence: true
 end
