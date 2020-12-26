@@ -7,10 +7,11 @@ class User < ApplicationRecord
   has_many :items
   has_many :purchases
 
-  validates :nickname, :email, :birthday, presence: true
-  
+  validates :nickname, :birthday, presence: true
+  validates :email, uniqueness: true, presence: true
   validates :password, presence: true,
-            format: { with: /\A(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[\d])\w{6}\z/ }
+            format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i },
+            length: { minimum: 6 }
   
   validates :last_name, :first_name, presence: true,
   format: { with: /\A[ぁ-んァ-ン一-龥]/ }
