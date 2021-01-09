@@ -42,7 +42,6 @@
     </div>
     <%# /商品名と商品説明 %>
 
-    <%# 商品の詳細 %>
     <div class="items-detail">
       <div class="weight-bold-text">商品の詳細</div>
       <div class="form">
@@ -58,7 +57,6 @@
         <%= f.collection_select(:product_condition_id, ProductCondition.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
       </div>
     </div>
-    <%# /商品の詳細 %>
 
     <%# 配送について %>
     <div class="items-detail">
