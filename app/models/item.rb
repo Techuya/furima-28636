@@ -3,6 +3,7 @@ class Item < ApplicationRecord
   belongs_to :category
   belongs_to :product_condition
   belongs_to :postage_payer
+  belongs_to :Prefecture
 
   belongs_to :user
 end
