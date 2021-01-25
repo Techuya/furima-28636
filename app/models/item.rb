@@ -8,7 +8,8 @@ class Item < ApplicationRecord
   belongs_to :arrival_day
   has_one_attached :image
 
-  belongs_to :user, optional: true
+  belongs_to :user
+  # , optional: true
   # has_one :purchases
 
   with_options presence: true do
