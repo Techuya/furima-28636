@@ -1,5 +1,4 @@
 class Item < ApplicationRecord
-<<<<<<< Updated upstream
   extend ActiveHash::Associations::ActiveRecordExtensions
 
   belongs_to :category
@@ -29,6 +28,4 @@ class Item < ApplicationRecord
     validates :arrival_day_id
   end
   
-=======
->>>>>>> Stashed changes
 end

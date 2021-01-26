@@ -1,6 +1,5 @@
 FactoryBot.define do
   factory :item do
-<<<<<<< Updated upstream
     name                 {"商品"}
     description          {Faker::Lorem.sentence}
     category_id          {2}
@@ -16,8 +15,5 @@ FactoryBot.define do
       item.image.attach(io: File.open('public/images/staff3.jpg'), filename: 'staff3.jpg')
     end
 
-=======
-    
->>>>>>> Stashed changes
   end
 end
