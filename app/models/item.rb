@@ -17,7 +17,7 @@ class Item < ApplicationRecord
     validates :description
     validates :price,
               format: { with: /\A[0-9]+\z/ },
-              numericality: {only_integer: true, greater_than: 300, less_than: 9999999 }
+              numericality: { only_integer: true, greater_than: 300, less_than: 9_999_999 }
   end
 
   with_options numericality: { other_than: 1 } do
@@ -27,5 +27,4 @@ class Item < ApplicationRecord
     validates :prefecture_id
     validates :arrival_day_id
   end
-  
 end
