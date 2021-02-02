@@ -39,6 +39,7 @@ class ItemsController < ApplicationController
       redirect_to :root
     else
       render 'show'
+    end
   end
 
   private
